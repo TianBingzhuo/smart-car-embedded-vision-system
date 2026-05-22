@@ -1,0 +1,16 @@
+A-firearms
+B-explosive
+C-dagger
+D-spontoon
+E-fire_axe
+F-first_aid
+G-flashlight
+H-intercom
+I-bulletproof
+J-telescope
+K-helmet
+L-fire_engine
+M-ambulannce
+N-armoured
+O-motorcycle
+P-number
