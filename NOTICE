@@ -1,10 +1,12 @@
-OS and Robotics System Software Portfolio
-Copyright 2026 Tian Bingzhuo
+Smart Car Embedded Vision System
+Copyright 2026 Tian Bingzhuo and project contributors
 
-This repository contains cleaned public documentation and self-written demo
-source code for an academic portfolio around operating-system foundations,
-embedded systems, and robotics system software.
+This repository documents a team smart-car competition project. Competition
+results and project artifacts were produced collaboratively; teammate
+contributions in software, hardware, debugging, structure, documentation, and
+field testing should be respected.
 
-The repository intentionally excludes raw certificates, transcripts, private
-forms, team-member information, raw media, vendor SDK packages, build products,
-model files, and unreleased original project archives.
+Unless otherwise stated, source code and documentation authored for this
+repository are released under the Apache License 2.0. Third-party SDKs,
+libraries, model files, board packages, and vendor materials retain their
+original licenses.

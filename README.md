@@ -1,12 +1,14 @@
-# Vision Smart Car Control Pipeline
+# Smart Car Embedded Vision System
 
-Clean public archive for a vision-group smart-car competition project built around RT1064 firmware, OpenART visual recognition, IMU tuning, PCB iteration, and repeated vehicle bring-up.
+智能车嵌入式视觉控制系统
 
-The raw competition package is not dumped here. This folder keeps the public-safe parts that help a reader understand the engineering chain without exposing private certificates, teammate information, unreleased media, binary build products, or third-party model/vendor packages.
+This repository records an embedded smart-car project built around RT1064 firmware, OpenART visual recognition, IMU feedback, motor/steering control, PCB iteration, and repeated vehicle bring-up.
 
-## Summary
+本仓库整理的是智能车竞赛项目中的工程资料：主控固件、视觉识别脚本、IMU调试、PCB迭代、车辆运动控制和现场调车记录。仓库更关注系统链路和工程实现，不把原始资料包、构建产物和未确认授权的第三方文件直接堆进来。
 
-This project represents a sensing-control-actuation pipeline:
+## Project Overview
+
+The core control flow is:
 
 ```text
 camera / vision input
@@ -19,17 +21,19 @@ camera / vision input
 
 Competition context: 19th National Undergraduate Smart Car Competition, vision group, regional second prize.
 
-## What Is Published Here
+竞赛背景：第十九届全国大学生智能汽车竞赛，视觉组，赛区二等奖。
+
+## Repository Layout
 
 | Area | Path | Purpose |
 |---|---|---|
-| RT1064 firmware snapshot | `firmware/rt1064/project/code/` | Final public snapshot of application-level control, camera, motor, location, UART, filter, and logic modules. |
-| Toolchain project metadata | `firmware/rt1064/project/mdk/` | Minimal MDK project files needed to understand the embedded build setup. Generated objects and listings are excluded. |
-| OpenART scripts | `firmware/openart/` | Upper/lower OpenART scripts, serial command modes, labels, and deployment helpers. Model weights are intentionally excluded. |
-| IMU tuning notes | `hardware/imu/` | IMU660RA configuration notes and attitude-filter tuning records. |
-| PCB and schematic exports | `hardware/pcb/` | Public PCB/schematic screenshots and EasyEDA project exports. |
-| Bring-up notes | `docs/raw-notes/bringup-log.zh-CN.txt` | Original short field log for vehicle debugging milestones. |
-| Public demos | `src/` | Small synthetic demos for PID and line-center detection, independent of private competition data. |
+| RT1064 firmware | `firmware/rt1064/project/code/` | Application-level modules for camera input, mission logic, motor control, steering, encoders, filters, IMU, UART, and wireless communication. |
+| MDK project files | `firmware/rt1064/project/mdk/` | Minimal Keil/MDK project metadata for understanding the embedded build setup. |
+| OpenART scripts | `firmware/openart/` | Upper/lower OpenART scripts, serial command modes, labels, and deployment helpers. |
+| IMU notes | `hardware/imu/` | IMU660RA configuration and tuning notes. |
+| PCB files | `hardware/pcb/` | Schematic/PCB screenshots and EasyEDA project exports from the competition iteration. |
+| Bring-up notes | `docs/raw-notes/bringup-log.zh-CN.txt` | Short field notes from vehicle debugging. |
+| Small demos | `src/` | Lightweight Python demos for PID and line-center extraction. |
 
 ## How To Read The Firmware Snapshot
 
@@ -43,9 +47,11 @@ The most relevant application modules are:
 - `u660.c`: IMU interface and attitude-related integration.
 - `wifi.c`, `wir_usart.c`, `wirles_usart.c`: wireless and serial communication.
 
-The firmware snapshot is preserved as a readable competition archive, not as a turnkey SDK distribution. Third-party SDK/vendor libraries, local IAR configuration, and build artifacts are excluded from this repository.
+The firmware files in this repository are the application-level part of the project. Board SDKs, generated build outputs, model weights, and toolchain-local files are not part of this repository.
 
-## Public Demos
+这里保留的是便于阅读和复盘的应用层代码。若要真正编译上板，需要按所用开发板和工具链补齐对应SDK、启动文件和本地编译配置。
+
+## Demos
 
 Run:
 
@@ -54,18 +60,26 @@ python src/pid_demo.py
 python src/line_tracker.py
 ```
 
-These scripts do not depend on the competition hardware. They provide small public-safe examples of the control ideas used in the real project.
+These scripts are desktop-friendly examples for understanding two small parts of the system: PID response and line-center extraction. They are not a replacement for the full embedded firmware.
 
 ## Documents
 
 - `docs/system-architecture.md`: system-chain diagram.
 - `docs/hardware.md`: hardware and PCB overview.
-- `docs/openart-pipeline.md`: OpenART command modes and deployment boundary.
+- `docs/openart-vision.md`: OpenART command modes and deployment notes.
 - `docs/imu-tuning.md`: IMU tuning summary.
 - `docs/bringup-log.md`: cleaned milestone log.
-- `docs/release-boundary.md`: what was removed from the public version and why.
-- `docs/upstream-source.md`: source-release and license-review note for related upstream/team repositories.
 
-## Resume Connection
+## PCB Status
 
-This project supports a robotics-system-software narrative: sensing, embedded control, actuator output, PCB iteration, serial/wireless communication, field debugging, and the path toward ROS 2 topic/control abstractions.
+The PCB files are snapshots from the competition-stage iteration. They are useful for showing the electrical design process, but they are not claimed to be final production-ready boards. Further schematic cleanup, interface labeling, and board-review notes can be added later.
+
+PCB部分是竞赛阶段的迭代记录，可以体现设计过程，但后续仍有优化空间，例如接口标注、原理图说明、板级复盘和可制造性检查。
+
+## Team And Copyright
+
+This project was completed in a team competition setting. The competition result and engineering artifacts should be understood as collaborative work; every teammate's contribution deserves proper credit. This repository is maintained by Tian Bingzhuo to document the parts of the project that can be published and studied as engineering material.
+
+本项目来自团队竞赛，成果不是单人完成。队友在软件、硬件、调试、结构、文档和现场测试等方面均有相应贡献。本仓库由田秉卓维护，用于公开整理可复盘的工程内容；如后续需要补充更精确的成员署名或贡献说明，应以团队共识为准。
+
+Unless otherwise stated, code and documents authored for this repository are released under the Apache License 2.0. Third-party SDKs, models, libraries, and vendor materials retain their original licenses.

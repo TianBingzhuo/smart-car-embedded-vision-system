@@ -13,12 +13,12 @@ camera / OpenART modules
   -> IMU / encoder / field debugging feedback
 ```
 
-## Public Hardware Files
+## Hardware Files
 
 - `hardware/pcb/`: schematic and PCB screenshots plus EasyEDA project exports.
 - `hardware/rt1064-pin-map.txt`: RT1064 pin mapping note.
 - `hardware/imu/`: IMU660RA configuration and tuning notes.
 
-## Notes
+## PCB Status
 
-The public repository keeps project-owned board exports and readable engineering notes. Large vendor datasheets, complete vendor SDK archives, binary tool installers, and raw competition media are intentionally excluded.
+The PCB/schematic files are competition-stage snapshots. They are useful for documenting interface decisions, board iteration, and debugging history, but they still need later cleanup: clearer connector labels, review notes, and a concise explanation of each board's role in the vehicle.

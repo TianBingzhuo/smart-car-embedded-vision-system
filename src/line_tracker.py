@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: Apache-2.0
-"""Synthetic line-center extraction for a smart-car control pipeline."""
+"""Synthetic line-center extraction for a smart-car controller demo."""
 
 from __future__ import annotations
 

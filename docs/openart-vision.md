@@ -1,8 +1,8 @@
-# OpenART Pipeline
+# OpenART Vision Notes
 
-The project used OpenART modules for visual recognition and target-detection tasks. The public folder keeps scripts, labels, command-mode notes, and deployment helpers, while model weights are excluded by default.
+The project used OpenART modules for visual recognition and target-detection tasks. This note records the scripts, labels, serial command modes, and deployment conventions used by the smart-car project.
 
-## Public Files
+## Files
 
 - `firmware/openart/art_up.py`: upper OpenART script.
 - `firmware/openart/art_down.py`: lower OpenART script.
@@ -26,6 +26,6 @@ The original note records the following serial command convention:
 
 When switching functions, the system should send `0` first, then send the target mode command.
 
-## Release Boundary
+## Model Notes
 
-The original folder contained several `.tflite` model files. They are not included here because model provenance and redistribution rights should be checked before publishing. If a model is confirmed to be self-trained and safe to redistribute, publish only the final model with a short model card that explains dataset source, classes, input size, quantization mode, and intended hardware.
+Model weights are not included in this repository. If a self-trained model is added later, include a short model card covering dataset source, classes, input size, quantization mode, and intended hardware.

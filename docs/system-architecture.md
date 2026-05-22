@@ -1,4 +1,4 @@
-# System Architecture Draft
+# System Architecture
 
 ```mermaid
 flowchart LR
@@ -13,6 +13,6 @@ flowchart LR
 
 ## Notes
 
-- This diagram is a public abstraction, not a copy of raw competition materials.
-- The future ROS 2 mapping can treat recognition output as a topic, the controller as a node, and the motor driver as an actuator interface.
-
+- OpenART provides visual recognition results to the RT1064 control logic.
+- The RT1064 firmware combines recognition output, encoder/IMU feedback, and mission state to generate steering and motor commands.
+- For a future ROS 2 version, recognition output can be treated as a topic, the controller as a node, and the motor driver as an actuator interface.
