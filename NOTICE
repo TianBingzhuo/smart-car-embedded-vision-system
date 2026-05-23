@@ -6,6 +6,15 @@ results and project artifacts were produced collaboratively; teammate
 contributions in software, hardware, debugging, structure, documentation, and
 field testing should be respected.
 
+Known contribution split:
+- 戴哲维: main program / RT1064 vehicle-control firmware.
+- 葛洪飞: main program / RT1064 vehicle-control firmware.
+- 黄得时: mechanical structure.
+- 么林坤: vision part, including OpenART-related recognition work.
+- 田秉卓: PCB design, soldering, board iteration notes, and public repository
+  maintenance.
+
 Unless otherwise stated, source code and documentation authored in this
-repository use the Apache License 2.0. SDKs, libraries, model files, board
-packages, and vendor materials should follow their own licenses.
+repository use the Apache License 2.0 where the contributors have the right to
+license them. SDKs, libraries, model files, board packages, and vendor
+materials should follow their own licenses.

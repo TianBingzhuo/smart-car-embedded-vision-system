@@ -26,4 +26,4 @@ single module works
   -> simplify main control flow
 ```
 
-This is the part of the project that matters most for a portfolio: it demonstrates repeated field debugging rather than a one-shot code upload.
+This log is useful because it records repeated field debugging instead of only preserving the final code snapshot.

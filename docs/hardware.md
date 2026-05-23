@@ -8,7 +8,7 @@ This project combines a vision smart-car control stack with custom board iterati
 camera / OpenART modules
   -> recognition result over serial
   -> RT1064 control board
-  -> motor, steering, and actuator drivers
+  -> motor, servo, electromagnet, and actuator drivers
   -> vehicle motion
   -> IMU / encoder / field debugging feedback
 ```
@@ -21,4 +21,6 @@ camera / OpenART modules
 
 ## PCB Status
 
-The PCB/schematic files are competition-stage snapshots. They record interface decisions, board iteration, and debugging history. Follow-up work can add clearer connector labels, board-review notes, and a concise explanation of each board's role in the vehicle.
+The PCB/schematic files are competition-stage snapshots. They record interface decisions, board iteration, and debugging history. Tian Bingzhuo was responsible for PCB design, soldering, and board-level iteration records in this team project.
+
+These files are useful as evidence of the electrical integration process, but they should not be treated as final production-ready boards. Follow-up work can add clearer connector labels, board-review notes, design-rule checks, and a concise explanation of each board's role in the vehicle.

@@ -2,6 +2,8 @@
 
 The project used OpenART modules for visual recognition and target-detection tasks. This note records the scripts, labels, serial command modes, and deployment conventions used by the smart-car project.
 
+The vision part of the team project was mainly handled by 么林坤. The Python files in this directory are OpenART-side scripts and deployment helpers, not standalone desktop examples.
+
 ## Files
 
 - `firmware/openart/art_up.py`: upper OpenART script.
