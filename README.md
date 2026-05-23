@@ -10,6 +10,16 @@ Competition context: 19th National Undergraduate Smart Car Competition, Vision G
 
 竞赛背景：第十九届全国大学生智能汽车竞赛，视觉组，赛区二等奖。
 
+## Project At A Glance
+
+| Item | Summary |
+|---|---|
+| Competition | 19th National Undergraduate Smart Car Competition, Vision Group. |
+| System type | RT1064 embedded vehicle-control firmware with OpenART visual recognition, IMU/encoder feedback, actuator control, and PCB iteration. |
+| Repository focus | Public-safe firmware snapshot, OpenART scripts, PCB images/exports, IMU notes, and bring-up notes. |
+| My role | PCB design, soldering, board iteration notes, and public repository maintenance. |
+| Not included | Full raw competition package, private media/certificates, unreleased teammate materials, binary build outputs, board-vendor SDK bundles, and unreviewed third-party files. |
+
 ## Competition Task Context
 
 The Vision Group task combines autonomous vehicle control and visual target-board handling. The car starts from the starting area, follows the track as a ground-guidance map, searches for scattered or stacked target boards, detects and classifies them, and transports them to the required placement areas.
@@ -17,6 +27,14 @@ The Vision Group task combines autonomous vehicle control and visual target-boar
 第十九届视觉组的核心不是单纯循迹，而是“循迹 + 目标板搜索 + 视觉分类 + 搬运放置”的整车系统任务。项目需要把 RT1064 主控、总钻风赛道图像、OpenART 识别、四麦轮运动控制、编码器/IMU 反馈、舵机/电磁铁执行机构和自制 PCB 一起调通。
 
 See [docs/competition-task.md](docs/competition-task.md) for the rule-derived task explanation and repository mapping.
+
+## Visual Materials
+
+This repository uses only real project materials already included in the public-safe snapshot.
+
+![Main-board PCB snapshot](hardware/pcb/PCB_主板第二版PCB2_2026-05-22.png)
+
+![Driver-board PCB snapshot](hardware/pcb/PCB_驱动板_2026-05-22.png)
 
 ## Project Overview
 
@@ -41,6 +59,7 @@ camera / vision input
 | IMU notes | `hardware/imu/` | IMU660RA configuration and tuning notes. |
 | PCB files | `hardware/pcb/` | Schematic/PCB screenshots and EasyEDA project exports from the competition iteration. |
 | Competition context | `docs/competition-task.md` | 19th Vision Group task, constraints, and project mapping. |
+| Contribution scope | `docs/contribution-scope.md` | Team contribution split and public repository boundary notes. |
 | Bring-up notes | `docs/raw-notes/bringup-log.zh-CN.txt` | Field notes from vehicle debugging. |
 
 ## How To Read The Firmware Snapshot
@@ -64,6 +83,7 @@ The only Python files kept in this repository are OpenART-side scripts or deploy
 ## Documents
 
 - `docs/competition-task.md`: 19th Vision Group task context and project mapping.
+- `docs/contribution-scope.md`: team contribution split and public repository boundaries.
 - `docs/system-architecture.md`: system-chain diagram.
 - `docs/hardware.md`: hardware and PCB overview.
 - `docs/openart-vision.md`: OpenART command modes and deployment notes.
