@@ -21,4 +21,4 @@ camera / OpenART modules
 
 ## PCB Status
 
-The PCB/schematic files are competition-stage snapshots. They are useful for documenting interface decisions, board iteration, and debugging history, but they still need later cleanup: clearer connector labels, review notes, and a concise explanation of each board's role in the vehicle.
+The PCB/schematic files are competition-stage snapshots. They record interface decisions, board iteration, and debugging history. Follow-up work can add clearer connector labels, board-review notes, and a concise explanation of each board's role in the vehicle.

@@ -28,4 +28,4 @@ When switching functions, the system should send `0` first, then send the target
 
 ## Model Notes
 
-Model weights are not included in this repository. If a self-trained model is added later, include a short model card covering dataset source, classes, input size, quantization mode, and intended hardware.
+This repository keeps the OpenART scripts and labels that explain the vision-side workflow. If a trained model is added later, document the dataset source, classes, input size, quantization mode, and intended hardware beside the model file.

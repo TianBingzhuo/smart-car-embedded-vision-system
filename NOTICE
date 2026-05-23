@@ -6,7 +6,6 @@ results and project artifacts were produced collaboratively; teammate
 contributions in software, hardware, debugging, structure, documentation, and
 field testing should be respected.
 
-Unless otherwise stated, source code and documentation authored for this
-repository are released under the Apache License 2.0. Third-party SDKs,
-libraries, model files, board packages, and vendor materials retain their
-original licenses.
+Unless otherwise stated, source code and documentation authored in this
+repository use the Apache License 2.0. SDKs, libraries, model files, board
+packages, and vendor materials should follow their own licenses.
