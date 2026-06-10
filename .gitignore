@@ -27,6 +27,17 @@ AppPackages/
 *.7z
 *.pdf
 *.docx
+*.bak
+*.orig
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+JLink.log
+JLink.log.bak
+JLinkSettings.ini
+EventRecorder.dbg
 raw/
 private/
 evidence/
