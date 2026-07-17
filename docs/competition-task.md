@@ -4,7 +4,7 @@ This repository comes from a project in the 19th National Undergraduate Smart Ca
 
 本文件用于说明第十九届智能车视觉组的任务背景，帮助读者理解本仓库中的 RT1064 固件、OpenART 脚本、IMU 调参、PCB 文件和调车记录。它不是官方规则替代文本；正式参赛要求仍以竞赛组委会发布的规则和现场说明为准。
 
-Referenced local materials (not included in this public repository — they are either vendor-provided PDFs, internal preparation spreadsheets, or contain third-party content that cannot be redistributed):
+The task summary was checked against the team's preparation notes and the following 19th Vision Group materials. Official competition rules and on-site instructions remain authoritative:
 
 - `第十九届视觉组准备流程及思路介绍-逐飞科技.pdf`
 - `19th培训大纲.xlsx`
@@ -38,7 +38,7 @@ The 19th Vision Group task is a mix of autonomous driving and visual handling. T
 
 ## System Parts
 
-The preparation material breaks the car into five core parts, which is honestly a pretty sensible way to think about it:
+The preparation material organizes the car into five core subsystems:
 
 1. Vehicle motion control.
 2. Track following.
@@ -87,7 +87,7 @@ There are no standalone desktop simulation scripts in this repo. The Python file
 
 这个仓库来自第十九届全国大学生智能汽车竞赛视觉组的一个参赛项目。这个文件想把竞赛到底要求我们做什么讲清楚，这样再看仓库里的 RT1064 固件、OpenART 脚本、IMU 调参笔记、PCB 文件和调车记录的时候，会更容易理解上下文。这不是官方规则的替代品——正式参赛要求还是以竞赛组委会发布的规则和现场说明为准。
 
-参考的本地资料（未包含在本公开仓库中——它们是厂商提供的 PDF、内部备赛表格，或包含无法再分发的第三方内容）：
+任务说明参考了团队备赛记录和以下第十九届视觉组资料；正式要求仍以竞赛组委会规则和现场说明为准：
 
 - `第十九届视觉组准备流程及思路介绍-逐飞科技.pdf`
 - `19th培训大纲.xlsx`
@@ -121,7 +121,7 @@ There are no standalone desktop simulation scripts in this repo. The Python file
 
 ## 系统组成
 
-备赛资料把小车拆成五个核心部分，说实话这种拆分方式挺合理的：
+备赛资料将小车拆分为五个核心子系统：
 
 1. 车辆运动控制。
 2. 赛道循迹。

@@ -1,20 +1,18 @@
-Smart Car Embedded Vision System
-Copyright 2026 Tian Bingzhuo and project contributors
+Smart Car Vision Platform
+Copyright 2023-2026 project contributors
 
-This repository documents a team smart-car competition project. Competition
-results and project artifacts were produced collaboratively; teammate
-contributions in software, hardware, debugging, structure, documentation, and
-field testing should be respected.
+This repository documents a team project for the 19th National Undergraduate
+Smart Car Competition, Vision Group. The vehicle and competition result were
+produced collaboratively.
 
 Known contribution split:
-- 戴哲维: main program / RT1064 vehicle-control firmware.
-- 葛洪飞: main program / RT1064 vehicle-control firmware.
-- 黄得时: mechanical structure.
-- 么林坤: vision part, including OpenART-related recognition work.
-- 田秉卓: PCB design, soldering, board iteration notes, and public repository
-  maintenance.
+- 戴哲维: main program and RT1064 vehicle-control firmware.
+- 葛洪飞: main program and RT1064 vehicle-control firmware.
+- 黄得时: mechanical structure and mechanism work.
+- 么林坤: vision system and OpenART recognition work.
+- 田秉卓: PCB design, soldering, board iteration, hardware bring-up support,
+  and repository maintenance.
 
-Unless otherwise stated, source code and documentation authored in this
-repository use the Apache License 2.0 where the contributors have the right to
-license them. SDKs, libraries, model files, board packages, and vendor
-materials should follow their own licenses.
+Only material whose rights holder has granted Apache-2.0 is covered by that
+license. See LICENSE_SCOPE.md. SDKs, libraries, models, board packages, rules,
+and vendor materials retain their own terms.

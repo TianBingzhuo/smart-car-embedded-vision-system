@@ -25,7 +25,7 @@ What we observed in practice:
 - Slow left/right shaking produced relatively small error.
 - Fast motion increased error to roughly plus/minus 2 degrees.
 
-Honestly, getting to these numbers took more trial and error than I expected. The "fast motion" case was always the hardest to keep under control.
+These values were obtained through repeated field tuning. The fast-motion case required the most adjustment to keep the response stable.
 
 ## Engineering Takeaway
 
@@ -62,7 +62,7 @@ dt = 0.005
 - 缓慢左右摇晃时误差比较小。
 - 快速运动时误差会增大到大约正负 2 度。
 
-说实话，调到这些参数比预想的要折腾。快速运动的情况一直是最难控制住的。
+这些参数来自多轮现场调试，其中快速运动工况需要最多调整，才能保持响应稳定。
 
 ## 工程收获
 
