@@ -21,9 +21,9 @@ camera / OpenART modules
 
 ## PCB Status
 
-The PCB and schematic files here are snapshots from the competition stage. They capture the interface decisions we made, how the board evolved through a few iterations, and some of the debugging history along the way. I (Tian Bingzhuo / 田秉卓) was responsible for the PCB design, soldering, and keeping track of board-level iteration notes in this team project.
+The PCB and schematic files here are snapshots from the competition stage. They capture the interface decisions we made, how the board evolved through a few iterations, and some of the debugging history along the way. I (Tian Bingzhuo / 田秉卓) used Seekfree reference circuits for component selection and schematic/PCB design, and was responsible for soldering and board-level iteration notes in this team project.
 
-These files are useful as evidence of how the electrical integration actually happened, but I'd be the first to admit they're not final production-ready boards. There's room for clearer connector labels, board-review notes, design-rule checks, and a proper write-up of what each board actually does on the car. That's a "someday" task.
+A later [October 2026 review](pcb-review-2026-10.md) records native checks and a comparison with an independent Astra-generated KiCad candidate. It identifies specific follow-up work while keeping the original competition snapshots intact. The review does not qualify either version for production or establish physical-board performance.
 
 ---
 
@@ -52,6 +52,6 @@ camera / OpenART modules
 
 ## PCB 状态
 
-这里的 PCB 和原理图文件是竞赛阶段的快照。它们记录了我们当时做的接口决策、板子是怎么一步步迭代的，还有一些调试过程中的痕迹。在这个团队项目里，我（田秉卓）负责 PCB 设计、焊接以及板级迭代记录。
+这里的 PCB 和原理图文件是竞赛阶段的快照。它们记录了我们当时做的接口决策、板子是怎么一步步迭代的，还有一些调试过程中的痕迹。在这个团队项目里，我（田秉卓）参考逐飞电路进行选型和原理图/PCB 设计，负责焊接以及板级迭代记录。
 
-这些文件作为电路集成过程的记录是有参考价值的，但我自己也清楚，它们算不上量产级成品。连接器标注可以更清楚、板级复盘笔记可以补上、设计规则检查可以做一遍、每块板在车上具体干什么也值得好好写一写。这些都是"以后有空再说"的事了。
+后续[2026 年 10 月复盘](pcb-review-2026-10.md)已记录原生检查，并与 Astra 绘制的独立 KiCad 候选作了比较。复盘列出了具体待补项，竞赛原始快照保持不变；这不等于任一版已获生产放行或实板性能验证。

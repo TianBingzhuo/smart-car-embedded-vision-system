@@ -49,6 +49,10 @@ flowchart LR
 | `docs/system-architecture.md` | Control and data-flow diagram. |
 | `docs/contribution-scope.md` | Team roles and reuse notes. |
 
+## October 2026 review
+
+A later [PCB comparison and design review](docs/pcb-review-2026-10.md) records the original boards, an independent **Astra-generated KiCad A1 candidate**, native checks, geometry/part-identity findings and the limits of the explanatory models. Original competition artifacts remain preserved.
+
 ## Firmware And Hardware Notes
 
 The repository preserves the competition-stage application code and MDK project metadata. Building the RT1064 firmware requires the board support package, startup files, compiler configuration, and peripheral libraries that match the original development board.
@@ -123,6 +127,10 @@ flowchart LR
 | `docs/hardware.md` | 板卡接口和电气说明。 |
 | `docs/system-architecture.md` | 控制与数据流。 |
 | `docs/contribution-scope.md` | 团队分工与复用说明。 |
+
+## 2026 年 10 月复盘
+
+新增[PCB 对照与设计复盘](docs/pcb-review-2026-10.md)，分别记录本人原版、**Astra 绘制的独立 KiCad A1 候选**、原生检查、几何/选型发现与解释性模型的范围。竞赛原件继续保留。
 
 ## 固件与 PCB 说明
 
